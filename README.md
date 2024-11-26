@@ -55,29 +55,27 @@ Before running the project, ensure you have:
 
 1. Clone the repository:
 
-   ```bash
-   git clone [https://github.com/yourusername/rbac-management-system.git](https://github.com/Vyshnav1600/Role-Based-Access-Control-RBAC-UI
-)
-   cd rbac-management-system
-   ```
+```
+git clone [https://github.com/yourusername/rbac-management-system.git](https://github.com/Vyshnav1600/Role-Based-Access-Control-RBAC-UI)
+cd rbac-management-system
+```
 
-2.Install dependencies:
+2. Install dependencies:
 
-    ```bash
-    npm install
+  ```
+  npm install
+  ```
 
-    ```
-
-3.Start the development server:
+3. Start the development server:
 
 ```bash
    npm start
 ```
 
-4.Open your browser and navigate to:
-
+4. Open your browser and navigate to:
+```
     http://localhost:3000
-
+```
 ---
 
 ## Usage
