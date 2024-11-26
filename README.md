@@ -148,16 +148,14 @@ rbac-management-system/
 
 ```
 
-
-## Scripts
-
 ```
+#Scripts
 
 Start Development Server
 npm start
 Build for Production
 npm run build
-
+---
 ## Contributing
 
 We welcome contributions! If you'd like to help, please:
