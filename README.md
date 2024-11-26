@@ -7,7 +7,7 @@ A modern, feature-rich Role-Based Access Control (RBAC) management system built 
 ## Table of Contents
 
 - [Features](#features)
-- [Demo](#demo)
+
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -16,7 +16,6 @@ A modern, feature-rich Role-Based Access Control (RBAC) management system built 
   - [Role Management](#role-management)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
-- [Scripts](#scripts)
 
 ---
 
@@ -57,7 +56,8 @@ Before running the project, ensure you have:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/rbac-management-system.git
+   git clone [https://github.com/yourusername/rbac-management-system.git](https://github.com/Vyshnav1600/Role-Based-Access-Control-RBAC-UI
+)
    cd rbac-management-system
    ```
 
@@ -143,13 +143,7 @@ rbac-management-system/
 ├── package.json # Project dependencies and scripts
 └── README.md # Project documentation
 ```
-# Scripts
 
-Start Development Server
-npm start
-Build for Production
-npm run build
----
 
 ## Contact
 
