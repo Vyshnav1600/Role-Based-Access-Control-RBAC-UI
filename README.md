@@ -118,7 +118,7 @@ Login
 - **React.js**: A JavaScript library for building user interfaces.
 - **Ant Design**: A modern UI library for building responsive and accessible applications.
 - **JavaScript (ES6+)**: Used for component logic and state management.
-- **CSS**: For custom styling.
+
 
 ---
 
