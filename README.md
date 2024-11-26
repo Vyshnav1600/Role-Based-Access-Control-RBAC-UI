@@ -160,13 +160,13 @@ npm run build
 
 We welcome contributions! If you'd like to help, please:
 
-Fork the repository.
-Create a feature branch:
-bash
+- Fork the repository.
+- Create a feature branch:
+- bash
 
-git checkout -b feature/your-feature
-Commit your changes:
-bash
+- git checkout -b feature/your-feature
+- Commit your changes:
+ bash
 
 git commit -m "Add your feature"
 Push to your branch:
