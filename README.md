@@ -16,7 +16,6 @@ A modern, feature-rich Role-Based Access Control (RBAC) management system built 
   - [Role Management](#role-management)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 - [Scripts](#scripts)
 
 ---
@@ -43,11 +42,6 @@ A modern, feature-rich Role-Based Access Control (RBAC) management system built 
 
 ---
 
-## Demo
-
-🚀 **Coming soon!**
-
----
 
 ## Getting Started
 
@@ -132,6 +126,9 @@ Login
 
 ## Project Structure
 
+
+
+```
 rbac-management-system/
 ├── public/ # Public assets and index.html
 ├── src/
@@ -145,36 +142,14 @@ rbac-management-system/
 │ └── utils/ # Utility functions (if applicable)
 ├── package.json # Project dependencies and scripts
 └── README.md # Project documentation
-
 ```
-
-```
-#Scripts
+# Scripts
 
 Start Development Server
 npm start
 Build for Production
 npm run build
 ---
-
-## Contributing
-
-We welcome contributions! If you'd like to help, please:
-
-- Fork the repository.
-- Create a feature branch:
- bash
-
-- git checkout -b feature/your-feature
-- Commit your changes:
- bash
-
-git commit -m "Add your feature"
-Push to your branch:
-bash
-
-git push origin feature/your-feature
-Open a pull request.
 
 ## Contact
 
