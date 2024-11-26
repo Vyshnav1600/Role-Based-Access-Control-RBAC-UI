@@ -17,7 +17,6 @@ A modern, feature-rich Role-Based Access Control (RBAC) management system built 
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 - [Scripts](#scripts)
 
 ---
