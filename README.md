@@ -151,8 +151,8 @@ rbac-management-system/
 
 ## Contact
 
-Author: Vyshnav
+Author: Vyshnav P V
 
 Email: Vyshnav1600@gmail.com
 
-GitHub: https://github.com/Vyshnav1600/Role-Based-Access-Control-RBAC-UI
+GitHub: Vyshnav1600
