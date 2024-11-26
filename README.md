@@ -89,6 +89,13 @@ Before running the project, ensure you have:
 
 ## Usage
 
+Login
+
+- Use the following credentials to log in:
+- Username: admin
+- Password: admin
+- You can log in either by clicking the Login button or pressing the Enter key.
+
 ### User Management
 
 1. Navigate to the **User Management** section.
