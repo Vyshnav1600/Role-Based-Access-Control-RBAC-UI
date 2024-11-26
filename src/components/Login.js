@@ -9,7 +9,7 @@ const Login = ({ onLogin }) => {
     password: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
-  const [loading, setLoading] = useState(false); // Loading state
+  const [loading, setLoading] = useState(false);
 
   const handleLogin = () => {
     const validCredentials = {
@@ -21,11 +21,11 @@ const Login = ({ onLogin }) => {
       credentials.username === validCredentials.username &&
       credentials.password === validCredentials.password
     ) {
-      setLoading(true); // Show loading screen
+      setLoading(true);
       setTimeout(() => {
-        setLoading(false); // Hide loading screen
-        onLogin(); // Proceed with login
-      }, 1000); // 1-second delay
+        setLoading(false);
+        onLogin();
+      }, 1000);
     } else {
       setErrorMessage("Invalid username or password.");
     }

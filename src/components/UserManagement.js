@@ -19,12 +19,12 @@ const UserManagement = ({ roles, users, setUsers }) => {
     name: "",
     email: "",
     role: "",
-    status: "Active", // Default status
+    status: "Active",
   });
   const [isEditing, setIsEditing] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
 
-  const [form] = Form.useForm(); // Ant Design Form for validation
+  const [form] = Form.useForm();
 
   const resetForm = () => {
     setNewUser({
@@ -34,7 +34,7 @@ const UserManagement = ({ roles, users, setUsers }) => {
       role: "",
       status: "Active",
     });
-    form.resetFields(); // Clear form fields
+    form.resetFields();
     setIsEditing(false);
   };
 
@@ -43,12 +43,10 @@ const UserManagement = ({ roles, users, setUsers }) => {
       .validateFields()
       .then(() => {
         if (isEditing) {
-          // Update existing user
           setUsers((prev) =>
             prev.map((user) => (user.id === newUser.id ? newUser : user))
           );
         } else {
-          // Add new user
           setUsers((prev) => [...prev, { ...newUser, id: prev.length + 1 }]);
         }
         resetForm();
@@ -60,21 +58,21 @@ const UserManagement = ({ roles, users, setUsers }) => {
   };
 
   const handleEditUser = (user) => {
-    setNewUser(user); // Set current user details to the form
+    setNewUser(user);
     setIsEditing(true);
     setModalVisible(true);
-    form.setFieldsValue(user); // Populate form with existing user data
+    form.setFieldsValue(user);
   };
 
   const handleAddUser = () => {
-    resetForm(); // Reset form state for adding a new user
+    resetForm();
     setModalVisible(true);
     form.setFieldsValue({
       name: "",
       email: "",
       role: "",
       status: "Active",
-    }); // Explicitly reset form fields for new user
+    });
   };
 
   const handleDeleteUser = (id) => {

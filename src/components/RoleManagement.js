@@ -25,7 +25,7 @@ const RoleManagement = ({ roles, setRoles, users }) => {
   const [permissions] = useState(["Read", "Write", "Delete"]);
   const [modalVisible, setModalVisible] = useState(false);
 
-  const [form] = Form.useForm(); // Ant Design Form for validation
+  const [form] = Form.useForm();
 
   const resetForm = () => {
     setNewRole({
@@ -34,7 +34,7 @@ const RoleManagement = ({ roles, setRoles, users }) => {
       permissions: [],
       status: "Inactive",
     });
-    form.resetFields(); // Clear form fields
+    form.resetFields();
     setIsEditing(false);
   };
 
@@ -47,17 +47,15 @@ const RoleManagement = ({ roles, setRoles, users }) => {
         );
 
         if (existingRole && (!isEditing || existingRole.id !== newRole.id)) {
-          message.warning("This role name already exists!", 3); // Show popup for duplicate role
+          message.warning("This role name already exists!", 3);
           return;
         }
 
         if (isEditing) {
-          // Update existing role
           setRoles((prev) =>
             prev.map((role) => (role.id === newRole.id ? newRole : role))
           );
         } else {
-          // Add new role
           setRoles((prev) => [...prev, { ...newRole, id: prev.length + 1 }]);
         }
         resetForm();
@@ -69,39 +67,36 @@ const RoleManagement = ({ roles, setRoles, users }) => {
   };
 
   const handleEditRole = (role) => {
-    setNewRole(role); // Set current role details to the form
+    setNewRole(role);
     setIsEditing(true);
     setModalVisible(true);
-    form.setFieldsValue(role); // Populate form with existing role data
+    form.setFieldsValue(role);
   };
 
   const handleAddRole = () => {
-    resetForm(); // Reset form state for adding a new role
+    resetForm();
     setModalVisible(true);
     form.setFieldsValue({
       name: "",
       permissions: [],
       status: "Inactive",
-    }); // Explicitly reset form fields for new role
+    });
   };
 
   const handleDeleteRole = (id) => {
     const roleToDelete = roles.find((role) => role.id === id);
 
-    // Check if role is active
     if (roleToDelete.status === "Active") {
-      message.warning("Cannot delete an active role.", 3); // Fade-out warning popup
+      message.warning("Cannot delete an active role.", 3);
       return;
     }
 
-    // Check if role is assigned to any user
     const isRoleInUse = users.some((user) => user.role === roleToDelete.name);
     if (isRoleInUse) {
-      message.warning("Cannot delete a role that is assigned to a user.", 3); // Fade-out warning popup
+      message.warning("Cannot delete a role that is assigned to a user.", 3);
       return;
     }
 
-    // Proceed with deletion if neither condition is true
     setRoles((prev) => prev.filter((role) => role.id !== id));
   };
 
@@ -172,7 +167,7 @@ const RoleManagement = ({ roles, setRoles, users }) => {
       </Button>
       <Table
         columns={columns}
-        dataSource={roles} // Ensure roles are displayed in the table
+        dataSource={roles}
         rowKey="id"
         scroll={{ x: 600 }}
       />
