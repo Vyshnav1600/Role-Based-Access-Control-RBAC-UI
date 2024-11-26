@@ -156,13 +156,14 @@ npm start
 Build for Production
 npm run build
 ---
+
 ## Contributing
 
 We welcome contributions! If you'd like to help, please:
 
 - Fork the repository.
 - Create a feature branch:
-- bash
+ bash
 
 - git checkout -b feature/your-feature
 - Commit your changes:
