@@ -1,3 +1,5 @@
+## Project Structure
+
 rbac-management-system/
 ├── public/               # Public assets and index.html
 ├── src/
