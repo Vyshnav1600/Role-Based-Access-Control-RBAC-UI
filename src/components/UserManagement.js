@@ -203,11 +203,13 @@ const UserManagement = ({ roles, users, setUsers }) => {
             rules={[{ required: true, message: "Role is required!" }]}
           >
             <Select placeholder="Select a role">
-              {roles.map((role) => (
-                <Option key={role.id} value={role.name}>
-                  {role.name}
-                </Option>
-              ))}
+              {roles
+                .filter((role) => role.status === "Active")
+                .map((role) => (
+                  <Option key={role.id} value={role.name}>
+                    {role.name}
+                  </Option>
+                ))}
             </Select>
           </Form.Item>
           <Form.Item label="Status" name="status">
